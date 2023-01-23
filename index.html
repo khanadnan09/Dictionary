@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DictionaryApp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="dictionary_container">
+        <div class="heading">DictionaryApp</div>
+        <div class="search">
+            <ion-icon name="search-outline"></ion-icon>
+            <input type="search" id="search" placeholder="Type your word here...">
+            <span class="hint">Type a wotd and hit <span>Enter</span> to get the meaning. </span>
+        </div>
+        <div class="description_word">
+            <div class="word_audio">
+                <div class="word_wraper">
+                    <div class="word"></div>
+                    <div class="noun"></div>
+                    <div id="phonetics"></div>
+                </div>
+                <div class="audio">
+                    <ion-icon name="volume-high-outline" id="voice_icon"></ion-icon>
+                    <span id="voice_av"></span>
+                </div>
+            </div>
+            <div class="defination example">
+                <div class="word_wraper">
+                    <div class="word mean">Defination </div>
+                    <div class="word_child" id="defination"></div>
+                </div>
+            </div>
+            <div class="example">
+                <div class="word_wraper">
+                    <div class="word mean">Example</div>
+                    <div class="word_child" id="Example"></div>
+                </div>
+            </div>
+            <div class="synonyms">
+                <div class="word_wraper">
+                    <div class="word mean">Synonyms</div>
+                    <div class="word_child" id="Synonyms"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <audio class="voice"></audio>
+    <script src="main.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

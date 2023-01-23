@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to right top, #5c99f6, #2881ff, #0066ff, #0046ff, #2100ff);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dictionary_container::-webkit-scrollbar {
+    width: 0px;
+}
+
+.dictionary_container {
+    background-color: #fff;
+    padding: 20px 20px;
+    border-radius: .5rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    min-width: 400px;
+    max-width: 400px;
+    height: 189px;
+    overflow: hidden;
+    transition: 450ms;
+}
+
+.heading {
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 30px;
+    text-align: center;
+}
+
+.search {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    position: relative;
+}
+
+.search ion-icon {
+    position: absolute;
+    top: 15px;
+    left: 10px;
+}
+#voice_av{
+    display: block;
+    font-size: 15px;
+    position: absolute;
+    margin-top: -12px;
+    margin-left: -100px;
+}
+.search input {
+    margin-bottom: 10px;
+    border: 1px solid #b1b1b19c;
+    border-radius: .2rem;
+    height: 45px;
+    padding: 0 30px;
+}
+
+.search input:focus-visible {
+    outline: none;
+    border: 1px solid #005fff;
+}
+
+.search span {
+    font-size: 13px;
+    color: #979797;
+    margin: 10px 0;
+}
+
+.search span span {
+    font-size: 13px;
+    background-color: #1977ff;
+    border-radius: 5rem;
+    color: rgb(255, 255, 255);
+    padding: 0 10px;
+}
+
+.word_audio {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    border-bottom: 1px solid #d1d1d1;
+    padding-bottom: 10px;
+}
+.word{
+    font-size: 22px;
+}
+.mean{
+    font-size: 16px;
+}
+.word_child{
+    font-size: 13px;
+    color: #4a4a4a;
+}
+#phonetics , .noun{
+    font-size: 12px;
+    color: #898989;
+}
+.audio {
+    margin-top: 2px;
+    font-size: 25px;
+    color: #0b67ed;
+    cursor: pointer;
+}
+
+.meaning {
+    margin-top: 10px;
+    border-bottom: 1px solid #d1d1d1;
+    padding-bottom: 10px;
+    border-left: 3px solid #0b67ed;
+    padding-left: 10px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.example {
+    margin-top: 10px;
+    border-bottom: 1px solid #d1d1d1;
+    padding-bottom: 10px;
+    border-left: 3px solid #0b67ed;
+    padding-left: 10px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.synonyms {
+    margin-top: 10px;
+    border-bottom: 1px solid #d1d1d1;
+    padding-bottom: 10px;
+    border-left: 3px solid #0b67ed;
+    padding-left: 10px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+@media screen and (max-width: 480px) {
+    .dictionary_container {
+     min-width: 300px;
+     max-width: 95%;
+     height: 197px;
+    }
+  }
